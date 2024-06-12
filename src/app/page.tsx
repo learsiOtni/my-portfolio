@@ -24,12 +24,12 @@ export default function Home() {
         {/** Hero */}
         <div className="mt-20 flex items-center justify-center">
           <div>
-            <h1 className="text-[#cfd9ed] text-2xl sm:text-5xl">Hi, I'm Izzy.</h1>
+            <h1 className="text-[#cfd9ed] text-2xl sm:text-5xl">Hi, I&#39;m Izzy.</h1>
             <h2 className="text-[#cfd9ed] text-xl sm:text-3xl">
               A Front-End/Web Developer.
             </h2>
             <p className="text-body">
-              I'm passionate about solving real life problems and coding it into
+              I&#39;m passionate about solving real life problems and coding it into
               life.
             </p>
           </div>
