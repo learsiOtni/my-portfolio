@@ -20,7 +20,7 @@ export default function Home() {
         
       </header>
 
-      <main className="min-h-screen p-5">
+      <main className="min-h-screen p-5 sm:p-20">
         {/** Hero */}
         <div className="mt-20 flex items-center justify-center">
           <div>
