@@ -48,11 +48,10 @@ export default function Home() {
           <ProjectCards />
         </div>
 
-        {/** Contact Me Footer */}
-        <div id="contact" className="h-5" />
-        <div className="mt-48">
+        {/** Footer */}
+        <footer className="mt-48">
           <Footer/>
-        </div>
+        </footer>
       </main>
     </>
   );

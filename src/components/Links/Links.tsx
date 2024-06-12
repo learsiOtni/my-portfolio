@@ -7,7 +7,7 @@ type Props = {
     noActiveLink?: boolean;
 }
 
-export default function Links({ onItemClick, noActiveLink }: Props ) {
+export default function Links({ onItemClick, noActiveLink }: Readonly<Props> ) {
   return (
     <>
       <li className={`links ${noActiveLink || "active-link"}`}>
@@ -17,7 +17,7 @@ export default function Links({ onItemClick, noActiveLink }: Props ) {
         <Link href="#portfolio" onClick={onItemClick}>Portfolio</Link>
       </li>
       <li className="links">
-        <Link href="#contact" onClick={onItemClick}>Contact Me</Link>
+        <Link href="mailto:learsiotni@gmail.com" onClick={onItemClick}>Contact Me</Link>
       </li>
       <li className="links">
         <Link href="https://github.com/learsiOtni" onClick={onItemClick}>
