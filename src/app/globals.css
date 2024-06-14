@@ -42,7 +42,7 @@ body {
 
 /* Links */
 .links {
-  @apply text-[#cfd9ed]/50 cursor-pointer transition-colors duration-300 ease-in-out;
+  @apply text-white/50 cursor-pointer transition-colors duration-300 ease-in-out;
 }
 
 .links:hover {

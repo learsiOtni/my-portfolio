@@ -22,11 +22,11 @@ export default function Home() {
 
       <main className="min-h-screen p-5 sm:p-20">
         {/** Hero */}
-        <div className="mt-20 flex items-center justify-center">
+        <div className="mt-20 flex">
           <div>
             <h1 className="text-[#cfd9ed] text-2xl sm:text-5xl">Hi, I&#39;m Izzy.</h1>
             <h2 className="text-[#cfd9ed] text-xl sm:text-3xl">
-              A Front-End/Web Developer.
+              A Front-End/Web Developer {"</>"}
             </h2>
             <p className="text-body">
               I&#39;m passionate about solving real life problems and coding it into
