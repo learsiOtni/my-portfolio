@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav className="hidden sm:block">
-          <ul className="mt-5 p-2 flex items-center justify-center gap-10">
+        <nav className="items-center justify-between mt-5 px-16 hidden sm:flex">
+          <h1 className="initials">IL</h1>
+          <ul className="flex gap-10">
             <Links/>
           </ul>
         </nav>

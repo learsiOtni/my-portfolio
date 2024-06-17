@@ -28,6 +28,10 @@ body {
 }
 
 /* Text Css */
+.initials {
+  @apply text-[#cfd9ed] text-xl sm:text-2xl;
+}
+
 .text-title {
   @apply text-[#cfd9ed] text-lg sm:text-xl;
 }
