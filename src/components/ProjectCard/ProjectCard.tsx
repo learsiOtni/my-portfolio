@@ -3,7 +3,9 @@ import {
   faLink,
   faChevronDown,
   faChevronUp,
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
 import SkillsCard from "../SkillsCard/SkillsCard";
@@ -16,7 +18,8 @@ type Props = {
   more: Array<string>;
   image: any;
   techStack: Array<string>;
-  href: string;
+  githubHref: string;
+  demoHref?: string;
   expanded: boolean;
   onExpand: (id: string) => void;
 };
@@ -28,14 +31,15 @@ export default function ProjectCard({
   more,
   image,
   techStack,
-  href,
+  githubHref,
+  demoHref,
   expanded,
   onExpand,
 }: Readonly<Props>) {
   return (
     <div className="px-2.5 py-5 border-t border-t-primary/10">
       <div className="flex flex-col">
-        <Link href={href}>
+        <Link href={demoHref ? demoHref : githubHref}>
           <div className="group flex items-center cursor-pointer">
             <h3 className="mr-2.5 text-subtitle capitalize group-hover:text-primary">
               {title}
@@ -86,7 +90,7 @@ export default function ProjectCard({
               width: "80%",
               height: "auto",
               minWidth: "289px",
-              maxWidth: "578px"
+              maxWidth: "578px",
             }}
             sizes="(max-width: 768px) 100vw, 30vw"
             //className="border border-slate-200/50"
@@ -101,13 +105,26 @@ export default function ProjectCard({
               width: "33%",
               height: "auto",
               minWidth: "150px",
-              maxWidth: "300px"
+              maxWidth: "300px",
             }}
             sizes="(max-width: 768px) 100vw, 30vw"
             className="border border-slate-200/50"
           />
         </div>
       )}
+
+      <div className="flex gap-2">
+        {demoHref && (
+          <Link href={demoHref} className={classes.link}>
+            <FontAwesomeIcon icon={faPlay} className="mr-1.5" />
+            View Demo
+          </Link>
+        )}
+        <Link href={githubHref} className={classes.link}>
+          <FontAwesomeIcon icon={faGithub} className="mr-1.5" />
+          Github Repo
+        </Link>
+      </div>
     </div>
   );
 }

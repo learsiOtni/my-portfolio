@@ -1,3 +1,7 @@
 .button {
     @apply mt-2.5 mb-5 p-1 w-28 text-primary text-xs cursor-pointer border border-primary/50 rounded hover:opacity-80 sm:p-2 sm:w-32;
 }
+
+.link {
+    @apply mt-2.5 mb-5 p-1 w-28 text-[#cfd9ed] text-center text-xs cursor-pointer border border-[#cfd9ed]/50 rounded hover:text-primary/80 hover:border-primary/80 sm:p-2 sm:w-32;
+}

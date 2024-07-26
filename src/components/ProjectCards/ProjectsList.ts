@@ -13,7 +13,8 @@ export const ProjectsList = [
         ],
         image: SITDOWN,
         techStack: ["next.js", "typescript", "tailwind", "redux", "express.js", "firebase"],
-        href: "https://sitdown-next-app.vercel.app/login"
+        demoHref: "https://sitdown-next-app.vercel.app/login",
+        githubHref: "https://github.com/learsiOtni/sitdown-next-app"
     },
     {
         id: "macrotracker",
@@ -25,7 +26,8 @@ export const ProjectsList = [
             "One of my hobbies is going to the gym and staying fit. Before developing this web app, the way I tracked my macros and calories was manually, using an Excel spreadsheet. In the Excel spreadsheet, I stored a data list of the food I ate. I would create a page template and start copying and pasting food items from the data list. Also, it was very difficult to tweak or edit things such as changing 100g to 80g. I also tried some fitness tracker apps but you have to pay after 2 weeks of free trial. That was when I decided to develop this macro tracker app. I use this app whenever I am cutting or reducing my calorie intake in preparation for the summer holidays."
         ],
         techStack: ["react", "axios", "materialUI", "redux", "firebase"],
-        href: "https://macro-tracker-5e99c.web.app/signin"
+        demoHref: "https://macro-tracker-5e99c.web.app/signin",
+        githubHref: "https://github.com/learsiOtni/macro-tracker-web-app"
     },
     {
         id: "jdnative",
@@ -37,6 +39,6 @@ export const ProjectsList = [
             "STATUS: The app's functionality is currently limited but the overall UI design is complete."
         ],
         techStack: ["react native", "firebase", "expo go"],
-        href: "https://github.com/learsiOtni/jd-gym-native-app"
+        githubHref: "https://github.com/learsiOtni/jd-gym-native-app"
     }
 ]
